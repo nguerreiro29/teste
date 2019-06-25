@@ -1,6 +1,7 @@
 package academiajava;
 
-import java.awt.List;
+import java.util.List;
+import java.util.ArrayList;
 
 public class Book {
 	
@@ -9,6 +10,10 @@ public class Book {
 	public Book (String isbn) {
 		this.isbn = isbn;
 		
+	}
+	
+	public String getIsbn() {
+		return isbn;
 	}
 	
 	@Override
@@ -35,8 +40,20 @@ public class Book {
 	
 		List<Book> books = new ArrayList<>();
 		books.add(new Book("a"));
+		books.add(new Book("b"));
 		
+		for(int i = 0; i<books.size(); i++)
+		{
+			Book book = books.get(i);
+			System.out.println(book.getIsbn());
+		}
 		
+		for(Book book : books)
+		{
+			System.out.println(book.getIsbn());
+		}
+		
+	
 	
 	}
 	
