@@ -2,6 +2,7 @@ package academiajava;
 
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.Hashtable;
 
 public class Map1 {
 	
@@ -20,6 +21,18 @@ public class Map1 {
 		
 		System.out.println(map);
 		
+		
+		Hashtable<String, Object> map2 = new Hashtable<>();
+		map2.put("A", "1");
+		map2.put("B", Arrays.asList("1", "2"));
+		
+		System.out.println("3:" + map2.contains("3"));
+		System.out.println("3:" +map2.contains("2"));
+		System.out.println("1:"+ map2.contains("1"));
+		System.out.println(map2.containsKey("A"));
+		System.out.println(map2.containsKey("N"));
+		
+		System.out.println(map);
 	}
 
 }
