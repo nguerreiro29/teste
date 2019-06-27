@@ -27,10 +27,12 @@ public class Map1 {
 		map2.put("B", Arrays.asList("1", "2"));
 		
 		System.out.println("3:" + map2.contains("3"));
-		System.out.println("3:" +map2.contains("2"));
+		System.out.println("2:" +map2.contains("2"));
 		System.out.println("1:"+ map2.contains("1"));
-		System.out.println(map2.containsKey("A"));
-		System.out.println(map2.containsKey("N"));
+		System.out.println("22:" +map2.containsValue("2"));
+		
+		System.out.println("A:"+ map2.containsKey("A"));
+		System.out.println("N:" + map2.containsKey("N"));
 		
 		System.out.println(map);
 	}
